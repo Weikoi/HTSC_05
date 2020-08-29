@@ -3,6 +3,9 @@ class Query(object):
         self.query_condition = []
         self.table_name = table_name
 
+    def reset(self):
+        self.query_condition = []
+
     def add_condition(self, condition):
         self.query_condition.append(condition)
 
